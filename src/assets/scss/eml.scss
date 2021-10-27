@@ -1,0 +1,159 @@
+/* Funtions */
+@import "./functions/font-size";
+
+/* Mixins */
+@import "./mixins/FontSize";
+@import "./mixins/Padding";
+@import "./mixins/Height";
+@import "./mixins/Width";
+
+@import "./components/Variables";
+@import "./components/Header";
+@import "./components/Carousel";
+@import "./components/About";
+@import "./components/Parallax";
+@import "./components/Diferents";
+@import "./components/Services";
+@import "./components/Clients";
+@import "./components/Certifications";
+@import "./components/Form";
+@import "./components/Us";
+@import "./components/Map";
+@import "./components/Footer";
+@import "./components/svg";
+@import "./components/TopBar";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 1360px) {
+  .navbar-expand-md .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+
+    .navbar-expand-md .navbar-toggler {
+      display: none;
+    }
+}
+
+@media (max-width: 1359px) {
+  .navbar-expand-md .navbar-collapse {
+    display: none !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-md .navbar-toggler {
+    display: flex;
+  }
+}
+
+.cookies__box {
+  position: fixed;
+  background-color: $secondary;
+  z-index: 100;
+  padding: 20px;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  left: 0;
+
+  .description__cookies {
+    @include fluid-type-font-size($min-vw, $max-vw, $min-font-cookies-p, $max-font-cookies-p);
+    color: $primary;
+  }
+
+  .cookies__success {
+    padding: 3px 13px;
+    font-size: 0.8em;
+    background-color: $primary;
+    color: #fff;
+    border: none;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.container-barra {
+  width: 100%;
+  max-width: 200px;
+  position: fixed;
+  z-index: 500000;
+  top: 40%;
+
+  #btn-social {
+    display: none;
+  }
+
+  .openImageLeft {
+    width: 30%;
+  }
+
+  .icon-social_arr {
+    transition: all 0.4s;
+    transform: translateX(0%);
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width:1199px) {
+  .container-barra {
+    display: none;
+  }
+}
+
+.g-recaptcha {
+  margin-top: -6%;
+  margin-bottom: 6%;
+}
+
+@media screen and  (max-width: 1200px ) {
+  .g-recaptcha {
+    margin-top: -15%;
+    margin-bottom: 21%;
+    margin-left: -9%;
+}
+.recao {
+  display: flex;
+  justify-content: center;
+}
+
+}
+@media screen and  (max-width: 240px ) {
+  .g-recaptcha {
+    margin-top: -15%;
+    margin-bottom: 21%;
+    margin-left: -9%;
+    transform: scale(0.58);
+    -webkit-transform: scale(0.58);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;  
+}
+}
+@media screen and  (min-width: 241px ) and (max-width: 320px) {
+  .g-recaptcha {
+    margin-top: -15%;
+    margin-bottom: 21%;
+    margin-left: -9%;
+    transform: scale(0.79);
+    -webkit-transform: scale(0.79);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;  
+}
+}
+
+.g-recaptcha > div > div {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  transform: scale(0.77);
+  -webkit-transform: scale(0.77);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;  
+}

@@ -1,0 +1,150 @@
+.header {
+  box-shadow: $box-shadow;
+  position: fixed !important;
+  width: 100vw !important;
+  background-color: #fff;
+  z-index: 16;
+
+  .topbar {
+    img {
+      height: 25px;
+    }
+  }
+
+  .navbar-light {
+    @include fluid-type-height($min-vw, $max-vw, 100px, 120px);
+
+    .img-menu {
+      background: url('https://eml.co/page/img/img_menu.png');
+      @include fluid-type-width($min-vw, $max-vw, 118.9px, 210px);
+      @include fluid-type-height($min-vw, $max-vw, 40px, 50px);
+      background-size: 100% 100%;
+    }
+
+    .img-menu:hover {
+      background: url('https://eml.co/page/img/contacto_3.jpg');
+      @include fluid-type-width($min-vw, $max-vw, 118.9px, 210px);
+      @include fluid-type-height($min-vw, $max-vw, 40px, 50px);
+      background-size: 100% 100%;
+    }
+
+    .navbar-nav {
+      align-items: center;
+    }
+
+    .buttons {
+      @include fluid-type-width($min-vw, $max-vw, 180px, 230px);
+    }
+
+    .navbar-brand {
+      @include fluid-type-margin-left($min-vw, $max-vw, 11px, 76px);
+      padding-top: 5px;
+      @include fluid-type-width($min-vw, $max-vw, 80px, 169px);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-link {
+      color: $primary !important;
+      font-size: 15px;
+      font-weight: bolder;
+      // @include fluid-type-margin-right(1200px, $max-vw, 0px, 50px);
+    }
+
+    .nav-link:hover {
+      color: $secondary !important;
+      border-bottom: 2px solid $secondary;
+    }
+
+    .nav-link::after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $secondary;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  }
+}
+
+.nav-item {
+  @include fluid-type-margin-right(1200px, $max-vw, 0px, 46px);
+}
+
+.button-contact{
+    display: block;
+  border-bottom: none !important;
+}
+
+.buttons {
+  display: none !important;
+}
+
+.navbar-toggler {
+  padding: 0 !important;
+  font-size: 17px !important;
+  height: 30px;
+  width: 30px;
+}
+
+#certificaciones {
+  margin: 0;
+
+  .modal-content {
+    background-color: rgba(55, 78, 154, 0.5);
+    width: 100vw;
+
+    .modal-body {
+      height: 99.7vh;
+      width: 100vw;
+
+      .cerrar {
+        position: absolute;
+        width: 51.4vw;
+        height: 64px;
+        top: 31.2%;
+        left: 24%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .buttons {
+    display: block !important;
+  }
+
+  .button-contact {
+      display: none !important;
+  }
+
+  .navbar-nav {
+      background-color: $whiteColor !important;
+      max-width: 40%;
+      perspective: 1000px;
+      margin-top: 5%;
+      border-radius: 5%;
+      box-shadow: $box-shadow;
+      padding: 50px 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+  .navbar-nav{
+    max-width: 50%;
+    margin-top: 6%;
+  }
+}
+
+@media(max-width: 767px) {
+  .navbar-nav{
+    max-width: 85%;
+    margin-top: 6%;
+  }
+}

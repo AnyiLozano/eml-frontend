@@ -1,0 +1,307 @@
+.container-form {
+  max-width: 100% !important;
+
+  .form_text {
+    @include fluid-type-padding-left($min-vw, $max-vw, $min-padding-left-form, $max-padding-left-form);
+    @include fluid-type-padding-right($min-vw, $max-vw, $min-padding-right-form, $max-padding-right-form);
+    padding-top: 110px;
+
+    h2 {
+      color: $secondary;
+      font-weight: 600;
+      text-align: left;
+      margin: 0 0 15px 0;
+      @include fluid-type-font-size($min-vw, $max-vw, $min-font-form-h2, $max-font-form-h2);
+  
+      span {
+        color: $primary;
+      }
+    }
+
+    p {
+      letter-spacing: -1px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: $primary;
+      margin: 0 0 15px 0;
+      @include fluid-type-font-size($min-vw, $max-vw, $min-font-form-p, $max-font-form-p);
+      line-height: 1;
+    }
+  }
+
+  .registro {
+    margin-top: 3rem;
+    @include fluid-type-padding-left($min-vw, $max-vw, $min-padding-left-form, $max-padding-left-form);
+    @include fluid-type-padding-right($min-vw, $max-vw, $min-padding-right-form, $max-padding-right-form);
+
+    label {
+      color: $primary;
+      @include fluid-type-font-size($min-vw, $max-vw, $min-font-form-label, $max-font-form-label);
+    }
+
+    .btn-secondary {
+      background-color: $primary;
+      color: $whiteColor;
+      width: 180px;
+      height: 50px;
+      line-height: 40px;
+      border-radius: 5px;
+      font-size: 1.3em;
+      transition: 1s ease;
+    }
+  
+    .btn-secondary:hover {
+      color: #fff;
+      background-color: rgba(0, 0, 254, 1);
+      border-color: rgba(0, 0, 254, 1);
+    }
+
+    textarea {
+      height: 300px !important;
+    }
+  
+    .form-control {
+      border: 3px solid $secondary !important;
+      border-radius: 5px;
+      text-align: center;
+      padding: 15px;
+      box-sizing: border-box;
+      height: 70px;
+    }
+  
+    .css-yk16xz-control {
+      height: 70px;
+      border: 3px solid $secondary !important;
+      border-radius: 8px;
+    }
+  
+    .css-1wa3eu0-placeholder {
+      color: $primary !important;
+      opacity: 1;
+      text-align: center;
+      left: 44.5% !important;
+    }
+  
+    .form-control::placeholder {
+      color: $primary;
+    }
+  
+    .acept {
+      color: $primary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  
+    input[type='checkbox']:checked {
+      background-color: $secondary !important;
+    }
+
+    .css-1pahdxg-control {
+      min-height: 70px !important;
+      border-color: $secondary !important;
+      box-shadow: 0 0 0 1px $secondary !important;
+      border-width: 3px !important;
+    }
+    
+    .css-fp2c4i-singleValue {
+      color: $primary !important;
+    }
+    
+    .css-g1d714-ValueContainer {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 2px 8px;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      justify-content: center;
+    
+      div {
+        color: $primary;
+      }
+    }
+    
+    .css-177gczy-control {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: hsl(0, 0%, 100%);
+      border-color: hsl(0, 0%, 80%);
+      border-radius: 4px;
+      border-style: solid;
+      border-width: 1px;
+      cursor: default;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      min-height: 38px;
+      outline: 0!important;
+      position: relative;
+      -webkit-transition: all 100ms;
+      transition: all 100ms;
+      box-sizing: border-box;
+      border: 3px solid #f5a11a !important;
+      border-radius: 5px;
+      text-align: center;
+      /* padding: 15px; */
+      box-sizing: border-box;
+      height: 70px;
+    }
+    
+    .css-1q13bnb-placeholder {
+      color: $primary !important;
+      text-align: center !important;
+    }
+    
+    .css-pqub6d-control {
+      border-color: $secondary !important;
+      box-shadow: none !important;
+      min-height: 70px !important;
+      border-width: 3px !important;
+      border-style: solid !important;
+    }
+  }
+}
+
+.css-1hwfws3 {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  flex: 1 1 0%;
+  flex-wrap: wrap;
+  padding: 2px 8px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.btn-aceptar {
+  width: 100%;
+  background-color: $primary !important;
+  color: $secondary !important;
+  border: none;
+  border-color: transparent;
+  font-weight: bolder !important;
+  perspective: 1000px;
+}
+
+.btn-aceptar:hover {
+  width: 100%;
+  background-color: $secondary !important;
+  color: $primary !important;
+  border: none;
+  border-color: transparent !important;
+  font-weight: bolder !important;
+  perspective: 1000px;
+}
+
+.modal-header {
+  color: $secondary;
+  font-weight: bolder !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 700px;
+}
+
+.aceptar {
+  width: 100%;
+}
+
+@media (max-width:1199px) {
+  .container-form {
+    .form_text {
+      padding-top: 0;
+    }
+
+    .registro {
+      margin-top: 3rem;
+
+      .btn-secondary {
+        width: 100%;
+      }
+
+      .form-control {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .container-form {
+    .form_text {
+      padding-left: 13%;
+      padding-right: 9%;
+      p {
+        text-align: justify;
+      }
+    }
+
+    .registro {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container-form {
+    padding-right: 0 !important;
+    .row {
+      margin-right: 0;
+    }
+    .form_text {
+      padding-top: 0;
+    }
+    .registro {
+      margin-top: 0rem;
+      padding-left: 41px;
+
+      .col-12 {
+        padding: 0;
+      }
+
+      .btn-secondary {
+        width: 100%;
+      }
+
+      .form-control {
+        padding: 0;
+      }
+    }
+  }
+  
+  .modal-body {
+    height: 76vh;
+  }
+}

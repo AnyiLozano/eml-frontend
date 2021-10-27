@@ -1,0 +1,94 @@
+/* Global Variables */
+  // Width
+  $min-vw: 320px !default;
+  $max-vw: 1920px !default;
+
+  // Colors
+  $primary: rgba(55, 78, 154, 1) !default;
+  $secondary: rgba(245, 161, 26, 1) !default;
+  $whiteColor: #fff !default;
+
+  // Box Shadow
+  $box-shadow: 0px 6px 10px 0px rgba(128,98,96, 1 / 16) !default;
+
+$min-font-cookies-p: 6px !default;
+$max-font-cookies-p: 16px !default;
+/* Header Component Variables */
+  // Font Size
+  $min-font-header-a: 12px !default;
+  $max-font-header-a: 19px !default;
+
+  // Padding Right
+  $min-padding-right-header: 2px !default;
+  $max-padding-right-header: 40px !default;
+
+/* About Component Variables */
+  // Font Size
+  $min-font-about-h2: 30px !default;
+  $max-font-about-h2: 39px !default;
+  $min-font-about-h3: 30px !default;
+  $max-font-about-h3: 30px !default;
+  $min-font-about-p: 19.5px !default;
+  $max-font-about-p: 25px !default;
+  $min-font-about-h4: 24px !default;
+  $max-font-about-h4: 24px !default;
+
+/* Diferents Component Variables */
+  // Font Size
+  $min-font-diferent-h2: 22px !default;
+  $max-font-diferent-h2: 50px !default;
+
+/* Services Component Variables */
+  // Font Size
+  $min-font-services-h2: 26.9px !default;
+  $max-font-services-h2: 50px !default;
+  $min-font-services-h6: 20px !default;
+  $max-font-services-h6: 40px !default;
+  $min-font-services-ul: 12px !default;
+  $max-font-services-ul: 25px !default;
+
+/* Clients Component Variables */
+  // Font Size
+  $min-font-clients-h2: 15px !default;
+  $max-font-clients-h2: 55px !default;
+
+/* Certifications Component Variables */
+  // Font Size
+  $min-font-certifications-h2: 22px !default;
+  $max-font-certifications-h2: 38px !default;
+  $min-font-certifications-h6: 12.6px !default;
+  $max-font-certifications-h6: 19.6px !default;
+
+/* Form Component Variables */
+  // Font Size
+  $min-font-form-h2: 22px !default;
+  $max-font-form-h2: 38px !default;
+  $min-font-form-p: 12.3px !default;
+  $max-font-form-p: 38.3px !default;
+  $min-font-form-label: 4.2px !default;
+  $max-font-form-label: 14px !default;
+  
+  // Padding
+  $min-padding-right-form: 28px !default;
+  $max-padding-right-form: 0px !default;
+  $min-padding-left-form: 28px !default;
+  $max-padding-left-form: 128px !default;
+
+/* Us Component Variables */
+  // Font Size
+  $min-font-us-h1: 23px !default;
+  $max-font-us-h1: 40px !default;  
+  $min-font-us-p: 8px !default;
+  $max-font-us-p: 19.6px !default;
+  $min-font-us-h6: 14.1px !default;
+  $max-font-us-h6: 27px !default;
+
+/* Map Component Variables */
+  // Font Size
+  $min-font-map-p: 10.4px !default;
+  $max-font-map-p: 19.6px !default;
+
+/* Footer Component Variables */
+  // Font Size
+  $min-font-footer-p: 6px !default;
+  $max-font-footer-p: 15px !default;

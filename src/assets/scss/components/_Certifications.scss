@@ -1,0 +1,143 @@
+.text-one {
+  position: relative;
+  background-color: $primary;
+  padding: 45px 0;
+  margin: 0;
+  height: 130px;
+
+  h2 {
+    color: $secondary;
+    font-weight: 700;
+    text-align: center;
+    @include fluid-type-font-size($min-vw, $max-vw, $min-font-certifications-h2, $max-font-certifications-h2);
+  }
+}
+
+.img_certificacion {
+  display: flex;
+  justify-content: center;
+  height: 230px;
+
+  img {
+    position: relative;
+    padding-top: 24px;
+    width: 40%;
+  }
+}
+
+.text-certificacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  top: 1em;
+  padding-bottom: 14px;
+
+  h6, p {
+    color: $primary;
+    font-weight: 600;
+    line-height: 15px;
+    @include fluid-type-font-size($min-vw, $max-vw, $min-font-certifications-h6, $max-font-certifications-h6);
+  }
+}
+
+.bg1 {
+  background-color: $primary;
+  position: relative;
+  height: 25px;
+}
+
+.text-two {
+  background-color: $secondary;
+  padding: 45px 0;
+  margin: 0;
+  height: 130px;
+
+  h2 {
+    color: $primary;
+    font-weight: 700;
+    text-align: center; 
+    @include fluid-type-font-size($min-vw, $max-vw, $min-font-certifications-h2, $max-font-certifications-h2);
+  }
+}
+
+.img-certifications-2 {
+  height: 275px;
+  border-bottom: 25px solid $secondary;
+}
+
+.veeva {
+  position: relative;
+
+  img {
+    @include fluid-type-width($min-vw, $max-vw, 119px, 260px);
+  }
+}
+
+.others {
+  position: relative;
+  padding-bottom: 8.4%;
+
+  img {
+    @include fluid-type-width($min-vw, $max-vw, 119px, 260px);
+  }
+}
+
+.bg2 {
+  position: relative;
+  height: 25px;
+  background-color: $secondary;
+}
+
+@media(max-width: 1199px){
+
+  .img_certificacion {
+    img {
+      width: 384px;
+    }
+  }
+
+  .others {
+    padding-bottom: 0;
+  }
+
+  
+}
+
+@media(max-width: 1023px){
+  .img_certificacion {
+    img {
+      width: 384px;
+    }
+  }
+
+  .img-certifications-2 {
+    height: 30vh;
+  }
+}
+
+@media(max-width: 768px) {
+  .img-certifications-2 {
+    height: 23vh;
+  }
+}
+
+@media(max-width: 540px) {
+  .img-certifications-2 {
+    height: 29vh;
+  }
+}
+
+@media(max-width: 375px) {
+  .img-certifications-2 {
+    height: 190px;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ration: 3) {
+  .img-certifications-2 {
+    height: 26vh;
+  }
+}

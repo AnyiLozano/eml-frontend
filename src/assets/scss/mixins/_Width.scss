@@ -1,0 +1,12 @@
+@mixin fluid-type-width($min-vw, $max-vw, $min-width, $max-width) {
+  & {
+    width: $min-width;
+    @media screen and (min-width: $min-vw) {
+      width: calc(#{$min-width} + #{strip-unit($max-width - $min-width)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+    }
+
+    @media screen and (min-width: $max-vw) {
+      width: $max-width;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+#diferencia {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    @include fluid-type-font-size($min-vw, $max-vw, $min-font-diferent-h2, $max-font-diferent-h2);
+    font-weight: 800;
+    color: $primary;
+    font-weight: 800;
+
+    span {
+      color: $secondary;
+    }
+  }
+
+  img {
+    width: 99vw;
+  }
+}

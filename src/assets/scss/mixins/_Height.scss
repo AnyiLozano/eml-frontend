@@ -1,0 +1,12 @@
+@mixin fluid-type-height($min-vw, $max-vw, $min-height, $max-height) {
+  & {
+    height: $min-height;
+    @media screen and (min-width: $min-vw) {
+      height: calc(#{$min-height} + #{strip-unit($max-height - $min-height)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+    }
+
+    @media screen and (min-width: $max-vw) {
+      height: $max-height;
+    }
+  }
+}
